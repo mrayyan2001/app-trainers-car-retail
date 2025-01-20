@@ -130,5 +130,3 @@ dotnet new interface -o ./Contract/ -n IEmployee
 | Create      | Client                | Client       |
 | Update      | nationalID, newClient | Client       |
 | Delete      | nationalID            | bool         |
-
-## Services Folder

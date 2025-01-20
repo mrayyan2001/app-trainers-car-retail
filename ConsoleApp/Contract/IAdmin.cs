@@ -6,18 +6,18 @@ public interface IAdmin
     bool Verification(string code);
 
     // ManageEmployees
-    List<Employee> GetALLEmployee();
-    Employee GetOneEmployee(long nationalID);
-    void CreateEmployee(long nationalID, string name, string email, string password);
-    void UpdateEmployee(long nationalID, string name, string email, string password);
-    void DeleteEmployee(Employee employeeToDelete);
+    Task<List<Employee>> GetALLEmployee();
+    Task<Employee> GetOneEmployee(long nationalID);
+    Task CreateEmployee(long nationalID, string name, string email, string password);
+    Task UpdateEmployee(long nationalID, string name, string email, string password);
+    Task DeleteEmployee(Employee employeeToDelete);
 
     // Mange Car
-    List<Car> GetALLCar();
-    Car GetOneCar(int plateNumber);
-    void CreateCar(long nationalID, string name, string email, string password);
-    void UpdateCar(long nationalID, string name, string email, string password);
-    void DeleteCar(Car employeeToDelete);
+    Task<List<Car>> GetALLCar();
+    Task<Car> GetOneCar(int plateNumber);
+    Task CreateCar(long nationalID, string name, string email, string password);
+    Task UpdateCar(long nationalID, string name, string email, string password);
+    Task DeleteCar(Car employeeToDelete);
 
 
 }
